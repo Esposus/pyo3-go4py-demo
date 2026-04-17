@@ -1,0 +1,13 @@
+[
+  {
+    "package": "main",
+    "name": "GoLoop",
+    "docs": "",
+    "arguments": [],
+    "return_type": [
+      {
+        "go_type": "*C.char"
+      }
+    ]
+  }
+]
