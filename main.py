@@ -1,5 +1,7 @@
 import time
 
+import mojo.importer
+from mloop import mojo_loop
 from rloop import rust_loop # type: ignore
 from gloop import goLoop # type: ignore
 
@@ -13,6 +15,10 @@ if __name__ == "__main__":
     print("\n=== Go loop ===")
     print(goLoop())
 
+    # Mojo версия
+    print("\n=== Mojo loop ===")
+    mojo_loop()
+
     # Python версия
     print("\n=== Python loop ===")
     start = time.time()
@@ -21,3 +27,5 @@ if __name__ == "__main__":
             print(f"i = {i}")
     elapsed_py = time.time() - start
     print(f"Elapsed (Python): {elapsed_py:.2f} sec\n")
+
+
